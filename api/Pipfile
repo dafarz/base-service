@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+
+[dev-packages]
+schema = {editable = true, path = "./../schema"}
+db = {editable = true, path = "./../db"}
+
+[requires]
+python_version = "3.9"
